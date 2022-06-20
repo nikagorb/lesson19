@@ -1,0 +1,94 @@
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  padding: 25px 0;
+}
+.navbar .logo {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  font-size: 1.5em;
+  font-weight: 750;
+}
+.navbar ul.nav {
+  margin-right: 5px;
+}
+.navbar ul.nav li.active,
+.navbar ul.nav li:hover {
+  color: #000000;
+  background: darkgrey;
+}
+.navbar ul.nav li a {
+  color: #000000;
+  font-size: 1em;
+  font-weight: 500;
+}
+.navbar ul.nav li.active a {
+  color: #000000;
+}
+.navbar ul.nav li.active a,
+.navbar ul.nav li:hover a {
+  color: #000000;
+}
+.header {
+  @media (min-width: 1200px) {
+    min-height: 100vh;
+  }
+}
+#carouselExampleInterval .carousel-inner .carousel-item h5 {
+  width: 100%;
+  height: auto;
+  color: white;
+  font-size: 35px;
+  font-weight: 650;
+}
+div.row.container-fluid {
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.footer {
+  padding: 50px 0;
+  color: #ffffff;
+  background-color: darkgrey;
+}
+.footer h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.footer ul {
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.footer ul a {
+  text-decoration: none;
+  opacity: 0.6;
+  color: inherit;
+}
+.footer ul a:hover {
+  opacity: 0.8;
+}
+
+.footer .item.text p {
+  margin-bottom: 0;
+  opacity: 0.6;
+}
+.footer .copyright {
+  margin-bottom: 0;
+  padding-top: 24px;
+  text-align: center;
+  opacity: 0.3;
+  font-size: 20px;
+}

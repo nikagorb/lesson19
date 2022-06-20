@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Magnolia Bakery</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 navbar bg-light">
+        <a class="logo navbar-brand text-black offset-md-1">Magnolia Bakery</a>
+        <ul class="nav">
+          <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact us</a></li>
+        </ul>
+        <button type="button" class="btn btn-light my-auto btn-outline-primary" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+          Make an order
+        </button>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Make an order</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="tel" class="form-label">Phone number</label>
+                    <input type="tel" class="form-control" id="tel" placeholder="+971 050 00 00 000">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="select" class="form-label">State</label>
+                    <select class="form-select" id="select">
+                      <option selected>Select</option>
+                      <option value="1">Dubai</option>
+                      <option value="2">Abu Dhabi</option>
+                      <option value="3">Sharjah</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="address">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="Address">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="check">
+                    <label class="form-check-label" for="check">Agree Private Policy</label>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-light">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/img1.png" class="d-block w-100" alt="slide 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Carrot cake</h5>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="assets/img/img2.png" class="d-block w-100" alt="slide 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Confetti cake</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/img3.png" class="d-block w-100" alt="slide 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Hummingbird cake</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="row container-fluid">
+  <main class="col-xl-8 col-md-10 col-xs-12 main">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Carrot cake
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>We load our super-moist carrot cake with freshly grated carrots, juicy pineapple, shredded coconut, raisins, and walnuts, then top it with tangy cream cheese frosting and more chopped nuts.</strong>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button btn btn-outline-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Confetti cake
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>We make our buttery, beloved vanilla cake extra festive with confetti folded into each layer, then cover the cake with buttercream and adorn it with more confetti outside.</strong>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button btn btn-outline-info collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Chocolate cake
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Three layers of super-rich chocolate cake and silky chocolate buttercream means pure, indulgent bliss.</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<div class="footer">
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-3 item">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#">Cakes</a></li>
+            <li><a href="#">Cupcakes</a></li>
+            <li><a href="#">Pudding</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 item">
+          <h3>About us</h3>
+          <ul>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 item text">
+          <h3>Magnolia Bakery</h3>
+          <p>Since 1996, Magnolia Bakery has been one of America’s most-cherished bakeshops and set the standard for tried-and-true desserts and baked goods.</p>
+        </div>
+      </div>
+      <p class="copyright">Magnolia Bakery © 1996</p>
+    </div>
+  </footer>
+</div>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
